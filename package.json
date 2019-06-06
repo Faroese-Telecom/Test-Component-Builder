@@ -1,6 +1,6 @@
 {
   "name": "test-component-builder",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A component builder used for testing. Mainly built for testing react components but is not limited to react.",
   "main": "lib/index.js",
   "scripts": {
@@ -31,6 +31,6 @@
     "@babel/node": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "rimraf": "^2.6.2",
-    "eslint": "^5.9.0"
+    "eslint": "^5.16.0"
   }
 }
