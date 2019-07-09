@@ -1,7 +1,7 @@
 /* tslint:disable */
 
-export class Builder {
-  constructor(builder: Function): void;
+declare class Builder {
+  constructor(builder: Function);
   with(properties: Object): Builder;
   using(wrapper: Function, prewrapper: Function): Builder;
   inject(values: Object, clone: boolean): Builder;
@@ -9,4 +9,6 @@ export class Builder {
   create(): any;
 }
 
-export default function(builder: Function): Builder;
+declare function constructBuilder(builder: Function): Builder;
+
+export = constructBuilder;

@@ -1,11 +1,12 @@
 {
   "name": "test-component-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component builder used for testing. Mainly built for testing react components but is not limited to react.",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && node node_modules/@babel/cli/bin/babel.js src --out-dir lib"
+    "build": "npm run clean && node node_modules/@babel/cli/bin/babel.js src --out-dir lib --copy-files"
   },
   "repository": {
     "type": "git",
