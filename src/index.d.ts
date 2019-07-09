@@ -1,6 +1,6 @@
 /* tslint:disable */
 
-declare class Builder {
+export declare class Builder {
   constructor(builder: Function);
   with(properties: Object): Builder;
   using(wrapper: Function, prewrapper: Function): Builder;
@@ -11,4 +11,4 @@ declare class Builder {
 
 declare function constructBuilder(builder: Function): Builder;
 
-export = constructBuilder;
+export default constructBuilder;
