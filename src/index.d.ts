@@ -6,7 +6,7 @@ export declare class Builder<T = any> {
   using(wrapper: Function, prewrapper: Function): Builder<T>;
   inject(values: Object, clone: boolean): Builder<T>;
   override(key: string, values: Object): Builder<T>;
-  create(): any;
+  create(): T;
 }
 
 declare function constructBuilder<T = any>(builder: Function): Builder<T>;
