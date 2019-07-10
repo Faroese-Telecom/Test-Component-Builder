@@ -1,14 +1,14 @@
 /* tslint:disable */
 
-export declare class Builder {
+export declare class Builder<T = any> {
   constructor(builder: Function);
-  with(properties: Object): Builder;
-  using(wrapper: Function, prewrapper: Function): Builder;
-  inject(values: Object, clone: boolean): Builder;
-  override(key: string, values: Object): Builder;
+  with(properties: Object): Builder<T>;
+  using(wrapper: Function, prewrapper: Function): Builder<T>;
+  inject(values: Object, clone: boolean): Builder<T>;
+  override(key: string, values: Object): Builder<T>;
   create(): any;
 }
 
-declare function constructBuilder(builder: Function): Builder;
+declare function constructBuilder<T = any>(builder: Function): Builder<T>;
 
 export default constructBuilder;
